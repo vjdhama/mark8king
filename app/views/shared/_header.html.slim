@@ -1,0 +1,20 @@
+header.header-frontend
+	.navbar.navbar-default.navbar-static-top
+		.container
+			.navbar-header
+				button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+				  span.fa.fa-bars
+			a.navbar-brand
+				= image_tag("logo2.jpg", size: "120x82", alt: "Logo", href: "#")
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav
+			  		li class= "#{current_page?(root_path) ? 'active' : ''}"
+			    		=link_to 'Home', root_path
+				  	li class= "#{current_page?(product_path) ? 'active' : ''}"
+				    	=link_to 'Product', product_path
+				  	li class= "#{current_page?(why_path) ? 'active' : ''}"
+				    	=link_to 'Why Us', why_path
+				  	li class= "#{current_page?(about_path) ? 'active' : ''}"
+				    	=link_to 'About Us', about_path
+				  	li class= "#{current_page?(new_contact_path) ? 'active' : ''}"
+				    	=link_to 'Contact Us', new_contact_path
