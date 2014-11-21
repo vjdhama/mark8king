@@ -12,8 +12,8 @@ header.header-frontend
 			    		=link_to 'Home', root_path
 				  	li class= "#{current_page?(product_path) ? 'active' : ''}"
 				    	=link_to 'Product', product_path
-				  	li class= ""
-				    	=link_to 'Why Us', root_path
+				  	li class= "#{current_page?(why_path) ? 'active' : ''}"
+				    	=link_to 'Why Us', why_path
 				  	li class= ""
 				    	=link_to 'About Us', root_path
 				  	li class= ""
