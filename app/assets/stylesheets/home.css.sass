@@ -1,0 +1,194 @@
+.pace
+  -webkit-pointer-events: none
+  pointer-events: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  user-select: none
+  .pace-progress
+    display: block
+    position: fixed
+    z-index: 2000
+    top: 0
+    left: 0
+    height: 12px
+    background: #29d
+    -webkit-transition: -webkit-transform .3s, width 1s
+    -moz-transition: width 1s
+    -o-transform: width 1s
+    transition: transform .3s, width 1s
+    -webkit-transform: translateY(-50px)
+    transform: translateY(-50px)
+    pointer-events: none
+  &.pace-active .pace-progress
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+.singular
+  font-size: 15px
+  span.mark
+    color: rgb(247,123,111)
+    background-color: inherit
+    font-size: 16px
+    font-weight: 200
+    font-style: oblique
+
+.business
+  background: url("/assets/flat_parallax.jpg") no-repeat fixed 0 0 #f1f1f1
+  background-size: cover
+  padding-bottom: 50px
+  margin-top: -60px
+  min-height: 600px
+  h1
+    font-family: "Fjalla One",sans-serif
+    font-size: 24px
+    font-weight: bolder
+    color: #FFFFFF
+    text-align: center
+    text-transform: uppercase
+    border-top: 10px solid rgb(247,123,111)
+    padding-top: 80px
+
+.col-centered
+  float: none
+  margin: 0 auto
+
+.overlay
+  min-height: 300px
+  border-radius: 4px
+  padding: 30px
+  margin-top: 80px
+
+.businessp
+  font-family: "Open Sans",sans-serif
+  font-size: 15px
+  font-weight: 300
+  color: #797979
+  margin-left: auto
+  margin-right: auto
+  padding-top: 50px
+  line-height: 170%
+  span
+    color: rgb(247,123,111)
+
+.big-icon
+  text-align: center
+  min-height: 250px
+  color: #ffffff
+  i
+    width: 20%
+
+.expertise
+  margin-top: 50px
+
+.expertlist
+  li
+    padding: 20px 25px
+    &:hover
+      color: white
+      background-color: rgb(247,123,111)
+    &:first-child
+      border-top-right-radius: 10px
+      border-top-left-radius: 10px
+    &:last-child
+      border-bottom-right-radius: 10px
+      border-bottom-left-radius: 10px
+
+.f-ul
+  font-size: 14px
+  font-weight: 300
+
+.f-box
+  background: #f4f4f4
+  border-radius: 10px
+  padding: 20px
+  text-align: center
+  min-height: 400px
+  margin-bottom: 20px
+  transition-duration: 500ms
+  transition-property: width, background
+  transition-timing-function: ease
+  -webkit-transition-duration: 500ms
+  -webkit-transition-property: width, background
+  -webkit-transition-timing-function: ease
+  i
+    font-size: 50px
+    line-height: normal
+    margin-top: 40px
+    display: block
+    color: #f77b6f
+  &:hover, &.active
+    background: #f77b6f
+    border-radius: 10px
+    padding: 20px
+    text-align: center
+    min-height: 400px
+    margin-bottom: 20px
+    transition-duration: 500ms
+    transition-property: width, background
+    transition-timing-function: ease
+    -webkit-transition-duration: 500ms
+    -webkit-transition-property: width, background
+    -webkit-transition-timing-function: ease
+  &:hover i, &.active i
+    font-size: 50px
+    line-height: normal
+    margin-top: 40px
+    display: block
+    color: #fff
+  &:hover h2, &.active h2
+    color: #fff
+  &:hover p, &.active p
+    color: #fff
+  h2
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: 400
+    font-family: 'Fjalla One', sans-serif
+    padding-bottom: 50px
+  p
+    padding-top: 20px
+    font-size: 14px
+    font-weight: 300
+
+.about-top
+  margin-top: 60px
+  margin-bottom: 40px
+
+.why-top
+  font-size: 24px
+  font-weight: 300
+  margin-top: 80px
+  font-style: italic
+
+.qt
+  color: rgb(247,123,111)
+  margin-top: 60px
+
+.quote-sub
+  font-size: 18px
+  font-weight: 300
+
+.service-container
+  width: 70%
+
+.same
+  color: #475168
+  font-size: 20px
+  text-transform: uppercase
+  font-family: "Fjalla One",sans-serif
+  font-weight: 400
+  margin-bottom: 20px
+
+#image
+  color: rgb(247,123,111)
+
+.top
+  margin-top: 60px
+
+.bottom
+  margin-bottom: 60px
+
+#product
+  margin-top: 50px
+  + .row
+    margin-top: 75px
