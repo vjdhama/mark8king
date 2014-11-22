@@ -68,7 +68,8 @@ gem 'guard-bundler', group: :development
 # Skrollr gem
 gem 'skrollr-rails'
 
-
+# Figaro gem
+gem 'figaro'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

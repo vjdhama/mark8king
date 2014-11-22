@@ -52,6 +52,8 @@ GEM
     eventmachine (1.0.3)
     execjs (2.2.2)
     ffi (1.9.6)
+    figaro (1.0.0)
+      thor (~> 0.14)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
@@ -189,6 +191,7 @@ DEPENDENCIES
   better_errors
   bootstrap-sass (~> 3.3.0)
   coffee-rails (~> 4.0.0)
+  figaro
   font-awesome-rails (~> 4.2.0.0)
   guard-bundler
   guard-livereload
