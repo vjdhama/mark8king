@@ -3,6 +3,8 @@ Mark8king::Application.routes.draw do
   get '/product' => 'product#index'
   get '/why' => 'whyus#index'
   get '/about' => 'aboutus#index'
+  get '/contact' => 'contact#new'
+  post '/contact' => 'contact#create'
 
   root 'home#index'
 
