@@ -18,7 +18,7 @@ class ContactController < ApplicationController
 		@contact.attributes = params['contact'].slice(*attributes)
 
         if @contact.save!
-            ContactMailer::contact_us(@contact).deliver
+            ContactMailer::contact_us(@contact).deliver!
             render :nothing => true
         else
             flash[:error] = @contact.errors
