@@ -48,7 +48,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-
 gem 'rails_12factor', group: :production
 
 # Forms, mail
@@ -70,6 +69,9 @@ gem 'skrollr-rails'
 
 # Figaro gem
 gem 'figaro'
+
+# nprogress gem
+gem 'nprogress-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

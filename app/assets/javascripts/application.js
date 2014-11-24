@@ -15,4 +15,6 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require skrollr
+//= require nprogress
+//= require nprogress-turbolinks
 //= require_tree .
