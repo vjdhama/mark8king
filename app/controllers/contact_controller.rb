@@ -7,10 +7,11 @@ class ContactController < ApplicationController
   	end
 
 	def create
-		name = params['contact']['name']
-		email = params['contact']['email']
-		phone = params['contact']['phone']
-		message = params['contact']['message']
+		contact = params['contact']
+		name = contact['name']
+		email = contact['email']
+		phone = contact['phone']
+		message = contact['message']
 
 		@contact = Contact.new
 		attributes = @contact.attribute_names
@@ -19,7 +20,8 @@ class ContactController < ApplicationController
 
         if @contact.save!
             ContactMailer::contact_us(@contact).deliver!
-            render :nothing => true
+        	flash[:notice] = "Message sent successfully"
+        	redirect_to contact_path
         else
             flash[:error] = @contact.errors
             render :new
