@@ -17,7 +17,10 @@
 #= require skrollr
 #= require nprogress
 #= require nprogress-turbolinks
+#= require underscore
+#= require gmaps/google
 #= require_tree .
+
 NProgress.configure
   showSpinner: false
   ease: "ease"

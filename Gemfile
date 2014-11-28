@@ -67,11 +67,15 @@ gem 'guard-bundler', group: :development
 # Skrollr gem
 gem 'skrollr-rails'
 
-# Figaro gem
+# gem for privacy
 gem 'figaro'
 
-# nprogress gem
+# gem for page load animation
 gem 'nprogress-rails'
+
+# gem for google maps
+gem 'underscore-rails'
+gem 'gmaps4rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
