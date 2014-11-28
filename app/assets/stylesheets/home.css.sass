@@ -51,10 +51,17 @@
 
 .expertlist
   li
-    padding: 20px 25px
+    font-size: 16px
+    padding: 25px 40px
+    transition-duration: 200ms
+    transition-property: width, background
+    transition-timing-function: ease
     &:hover
       color: white
       background-color: rgb(247,123,111)
+      transition-duration: 200ms
+      transition-property: width, background
+      transition-timing-function: ease
     &:first-child
       border-top-right-radius: 10px
       border-top-left-radius: 10px
@@ -67,3 +74,7 @@
 
 .bottom
   margin-bottom: 60px
+
+.logo
+  img
+    margin-top: -20px
