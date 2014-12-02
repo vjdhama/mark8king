@@ -1,19 +1,20 @@
 initialize = ->
   handler = undefined
+  handler = undefined
   handler = Gmaps.build("Google")
   handler.buildMap
-    provider: {
+    provider:
       maxZoom: 15
       minZoom: 10
-    }
+
     internal:
       id: "map"
   , ->
+    markers = undefined
     markers = handler.addMarkers([
       lat: 28.467310
       lng: 76.995987
-
-      infowindow: "hello!"
+      infowindow: "We are here!!"
     ])
     handler.bounds.extendWith markers
     handler.fitMapToBounds()
@@ -22,3 +23,5 @@ initialize = ->
   return
 
 google.maps.event.addDomListener window, "load", initialize
+# Next line is for fixing turbolinks bug
+google.maps.event.addDomListener window, 'page:load', initialize
