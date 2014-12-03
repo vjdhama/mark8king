@@ -21,10 +21,9 @@ class ContactController < ApplicationController
         if @contact.save!
             ContactMailer::contact_us(@contact).deliver!
             flash[:notice] = "Message sent successfully"
-            redirect_to contact_path
         else
             flash[:error] = @contact.errors
-            render :new
         end
+        render :new
 	end
 end

@@ -1,0 +1,16 @@
+|
+	$('.contact').html("#{j render "contact_form"}");
+	
+	flashCallback = function() {
+  		return $(".flash-message").fadeOut();
+	};
+
+	$(".flash-message").bind('click', (function(_this) {
+	  return function(ev) {
+	    return $(".flash-message").fadeOut();
+	  };
+	})(this));
+
+	setTimeout(flashCallback, 3000);
+
+	"#{flash={}}"

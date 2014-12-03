@@ -25,3 +25,12 @@ initialize = ->
 google.maps.event.addDomListener window, "load", initialize
 # Next line is for fixing turbolinks bug
 google.maps.event.addDomListener window, 'page:load', initialize
+
+$(document).ready ->
+  $('.contact_form').on 'ajax:before', ->
+    $('#loader').removeClass('hide')
+    $(this).addClass('hide')
+
+  $('.contact_form').on 'ajax:success', ->
+    $('#loader').addClass('hide')
+    $(this).removeClass('hide')
