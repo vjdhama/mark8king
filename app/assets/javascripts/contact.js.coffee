@@ -14,7 +14,7 @@ initialize = ->
     markers = handler.addMarkers([
       lat: 28.467310
       lng: 76.995987
-      infowindow: "We are here!!"
+      infowindow: "Mark8king Office"
     ])
     handler.bounds.extendWith markers
     handler.fitMapToBounds()

@@ -8,44 +8,32 @@
                     li
                         a href=""  Home
                     li.active Products
-.container
-	h2#product.text-center Product Gallery
+
+.container#product-gallery
+	h2#product-head.text-center Product Gallery
 	.row
-		.col-lg-12.thumb
-			a.thumbnail href="#"
-				= image_tag('p1.jpg')
-		.col-lg-12.thumb
-			a.thumbnail href="#"
-				= image_tag('p4.jpg')
+		.col-lg-12#left
+			= image_tag('p1.jpg', :class => "images" )
+		.col-lg-12#right
+			h3.pic-head.text-center New product campaign
+			p.text-center Create the initial buzz in the market for your much awaited product. 	
 	.row
-		.col-lg-12.thumb
-			a.thumbnail href="#"
-				= image_tag('p3.jpg')
-		.col-lg-12.thumb
-			a.thumbnail href="#"
-				= image_tag('p2.jpg')
-				
-#carousel-example-generic.carousel.slide data-ride="carousel" 
-  	/! Indicators
-  	ol.carousel-indicators
-	    li.active data-slide-to="0" data-target="#carousel-example-generic" 
-	    li data-slide-to="1" data-target="#carousel-example-generic" 
-	    li data-slide-to="2" data-target="#carousel-example-generic" 
-  	/! Wrapper for slides
-  	.carousel-inner role="listbox" 
-    	.item.active
-      		= image_tag('p3.jpg')
-      		.carousel-caption
-        		| \...
-    	.item
-	      	= image_tag('p2.jpg')
-	      	.carousel-caption
-	        	| \...
-    	| \...
-  	/! Controls
-  	a.left.carousel-control data-slide="prev" href="#carousel-example-generic" role="button" 
-	    span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
-	    span.sr-only Previous
-  	a.right.carousel-control data-slide="next" href="#carousel-example-generic" role="button" 
-	    span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
-	    span.sr-only Next
+		.col-lg-12#left
+			h3.pic-head.text-center Awareness
+			p.text-center Increase visibility  and awareness of your enterprise through unorthodoxy medium especially during critical times.
+		.col-lg-12#right
+			= image_tag('p2.jpg', :class => "images pull-right" )
+	.row
+		.col-lg-12#left
+			= image_tag('p3.jpg', :class => "images" )
+		.col-lg-12#right
+			h3.pic-head.text-center Offers and discounts
+			p.text-center Shout out offer in more creative way by presenting various promotion code on napkin.
+			p.text-center Consumer will use the code while purchasing from your online/offline stores.
+	.row
+		.col-lg-12#left
+			h3.pic-head.text-center Offers and discounts
+			p.text-center A message depicting offer on product, consumer will just scan the code or carry the coupon to shop to avail the discount.
+		.col-lg-12#right
+			= image_tag('p4.jpg', :class => "images pull-right" )
+
